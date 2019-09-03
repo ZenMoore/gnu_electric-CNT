@@ -93,7 +93,7 @@ public final class Main
     /**
      * Mode of Job manager
      */
-    private static enum Mode {
+    private enum Mode {
         /** Thread-safe full screen run. */                                    FULL_SCREEN_SAFE,
         /** JonG: "I think batch mode implies 'no GUI', and nothing more." */  BATCH,
         /** Server side. */                                                    SERVER,
