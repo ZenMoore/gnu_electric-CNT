@@ -55,7 +55,7 @@ public final class Launcher {
     private static final Logger logger = LoggerFactory.getLogger(Launcher.class);
 //    private static LocalLogger logger = new LocalLogger(Launcher.class);
 
-    private static final String[] propertiesToCopy = { "user.home" };
+    private static final String[] propertiesToCopy = { "user.home" };//todo
 
     private Launcher() {
     }
