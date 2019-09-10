@@ -55,7 +55,7 @@ public final class Launcher {
     private static final Logger logger = LoggerFactory.getLogger(Launcher.class);
 //    private static LocalLogger logger = new LocalLogger(Launcher.class);
 
-    private static final String[] propertiesToCopy = { "user.home" };//todo
+    private static final String[] propertiesToCopy = { "user.home" };//toask
 
     private Launcher() {
     }
@@ -174,6 +174,11 @@ public final class Launcher {
         return tmp.toArray(new String[tmp.size()]);
     }
 
+    /**
+     * 实际是去掉了Additional Folder的参数值
+     * @param args
+     * @return
+     */
     @TestByReflection(testMethodName = "getAdditionalFolder")
     private static String[] getAdditionalFolder(String[] args) {
         for (String arg : args) {
@@ -270,7 +275,7 @@ public final class Launcher {
     }
 
     private static void loadAndRunMain(String[] args, boolean loadDependencies) {
-        args = getAdditionalFolder(args);
+        args = getAdditionalFolder(args);//toask 为什么要去掉 additional folder
 
         initClasspath(loadDependencies);
         callByReflection(pluginClassLoader, "com.sun.electric.Main", "main", new Class[] { String[].class },
@@ -298,6 +303,7 @@ public final class Launcher {
         }
     }
 
+    //toask 如果在这里读取是通过文件的形式，那么在args中添加additonal folder的意义何在(反正get函数中删除了，反正这里还能读)
     private static URL[] readAdditionalFolder() {
         List<URL> urls = new ArrayList<URL>();
 
