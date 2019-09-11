@@ -209,8 +209,8 @@ public final class Launcher {
     }
 
     private static boolean invokeRegression(String[] args) {
-        List<String> javaOptions = new ArrayList<String>();
-        List<String> electricOptions = new ArrayList<String>();
+        List<String> javaOptions = new ArrayList<>();
+        List<String> electricOptions = new ArrayList<>();
         electricOptions.add("-debug");
         int regressionPos = 0;
         if (args[0].equals("-threads")) {
@@ -245,7 +245,7 @@ public final class Launcher {
 
     public static Process invokePipeserver(List<String> javaOptions, List<String> electricOptions)
             throws IOException {
-        List<String> procArgs = new ArrayList<String>();
+        List<String> procArgs = new ArrayList<>();
         String program = "java";
         String javaHome = System.getProperty("java.home");
         if (javaHome != null)
