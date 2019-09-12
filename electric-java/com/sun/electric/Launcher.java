@@ -116,7 +116,7 @@ public final class Launcher {
         // Start Electric in subprocess
 
         // build the command line for reinvoking Electric
-        List<String> procArgs = new ArrayList<String>();
+        List<String> procArgs = new ArrayList<>();
         procArgs.add(program);
         procArgs.add("-cp");
         procArgs.add(getJarLocation());
@@ -200,11 +200,12 @@ public final class Launcher {
     public static String getJarLocation() {
         String jarPath = System.getProperty("java.class.path", ".");
         if (jarPath.indexOf(' ') >= 0)
-            jarPath = "\"" + jarPath + "\"";
+            jarPath = "\"" + jarPath + "\"";//toask 怎么这里还加引号啊？
         return jarPath;
     }
 
     private static int getUserInt(String key, int def) {
+        //toask 这里怎么调用了抽象方法，他的具体实现类在哪里？Factory 的机制是怎么样的？
         return Preferences.userNodeForPackage(Launcher.class).node(StartupPrefs.USER_NODE).getInt(key, def);
     }
 
