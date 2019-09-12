@@ -1,0 +1,51 @@
+Electric Version 9.08b
+--------------- 0 --------------
+  Thu Sep 12 15:37:14 CST 2019
+ProcessKeyBinding 401 when=1568273834025 modifiers=200 code=12 char=ffff false false
+--------------- 1 --------------
+  Thu Sep 12 15:37:14 CST 2019
+ProcessKeyBinding 402 when=1568273834237 modifiers=0 code=12 char=ffff false false
+--------------- 2 --------------
+  Thu Sep 12 15:37:14 CST 2019
+ProcessKeyBinding 401 when=1568273834380 modifiers=200 code=12 char=ffff false false
+--------------- 3 --------------
+  Thu Sep 12 15:37:29 CST 2019
+Menu Activated: Cell | New Cell...
+--------------- 4 --------------
+  Thu Sep 12 15:38:11 CST 2019
+ProcessKeyBinding 401 when=1568273891292 modifiers=200 code=12 char=ffff false false
+--------------- 5 --------------
+  Thu Sep 12 15:38:17 CST 2019
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'marc{lay}': 'Metal-5-Metal-6-Con[contact@2].metal-5-metal-6'
+--------------- 6 --------------
+  Thu Sep 12 15:38:17 CST 2019
+ProcessKeyBinding 400 when=1568273897667 modifiers=0 code=0 char=7f false false
+--------------- 7 --------------
+  Thu Sep 12 15:38:19 CST 2019
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'marc{lay}': 'Metal-5-Metal-6-Con[contact@0].metal-5-metal-6'
+--------------- 8 --------------
+  Thu Sep 12 15:38:19 CST 2019
+ProcessKeyBinding 400 when=1568273899234 modifiers=0 code=0 char=7f false false
+--------------- 9 --------------
+  Thu Sep 12 15:38:20 CST 2019
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'marc{lay}': 'Metal-4-Metal-5-Con[contact@1].metal-4-metal-5'
+--------------- 10 --------------
+  Thu Sep 12 15:38:20 CST 2019
+ProcessKeyBinding 400 when=1568273900471 modifiers=0 code=0 char=7f false false
+--------------- 11 --------------
+  Thu Sep 12 15:38:21 CST 2019
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'marc{lay}': 'Metal-2-Pin[pin@0].metal-2'
+--------------- 12 --------------
+  Thu Sep 12 15:38:21 CST 2019
+ProcessKeyBinding 400 when=1568273901633 modifiers=0 code=0 char=7f false false
+--------------- 13 --------------
+  Thu Sep 12 15:38:21 CST 2019
+ProcessKeyBinding 401 when=1568273901957 modifiers=200 code=12 char=ffff false false

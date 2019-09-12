@@ -266,6 +266,7 @@ public final class Main
         MessagesStream.getMessagesStream();
 
 		// initialize database
+        //toask
         TextDescriptor.cacheSize();
         Tool.initAllTools();
         Pref.lockCreation();
@@ -274,8 +275,8 @@ public final class Main
         InitDatabase initJob = null;
         switch (runMode) {
             case FULL_SCREEN_SAFE:
-                serverDatabase = new EDatabase(IdManager.stdIdManager.getInitialSnapshot(), "serverDB");
-                EDatabase.setServerDatabase(serverDatabase);
+                serverDatabase = new EDatabase(IdManager.stdIdManager.getInitialSnapshot(), "serverDB");//toask 啥是快照？
+                EDatabase.setServerDatabase(serverDatabase);//toget
                 clientDatabase = new EDatabase(IdManager.stdIdManager.getInitialSnapshot(), "clientDB");
                 EDatabase.setClientDatabase(clientDatabase);
                 Job.setUserInterface(new UserInterfaceInitial(clientDatabase));
