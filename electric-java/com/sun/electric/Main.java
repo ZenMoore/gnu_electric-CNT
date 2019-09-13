@@ -267,7 +267,7 @@ public final class Main
 
 		// initialize database
         //toask
-        TextDescriptor.cacheSize();
+        TextDescriptor.cacheSize(); //toask 怎么不存储？
         Tool.initAllTools();
         Pref.lockCreation();
         EDatabase serverDatabase = null;

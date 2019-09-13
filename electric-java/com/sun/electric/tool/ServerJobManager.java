@@ -557,7 +557,7 @@ public class ServerJobManager {
         /**
          * Method to start the display of a progress dialog.
          * @param msg the message to show in the progress dialog.
-         * @param the file being read (null if not reading a file).
+         * @param  filePath being read (null if not reading a file).
          */
         @Override
         public void startProgressDialog(String msg, String filePath) {
