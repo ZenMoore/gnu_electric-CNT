@@ -275,14 +275,14 @@ public final class Main
         InitDatabase initJob = null;
         switch (runMode) {
             case FULL_SCREEN_SAFE:
-                serverDatabase = new EDatabase(IdManager.stdIdManager.getInitialSnapshot(), "serverDB");//toask 啥是快照？
+                serverDatabase = new EDatabase(IdManager.stdIdManager.getInitialSnapshot(), "serverDB");
                 EDatabase.setServerDatabase(serverDatabase);//toget
                 clientDatabase = new EDatabase(IdManager.stdIdManager.getInitialSnapshot(), "clientDB");
                 EDatabase.setClientDatabase(clientDatabase);
                 Job.setUserInterface(new UserInterfaceInitial(clientDatabase));
-                initJob = new InitDatabase(argsList);
+                initJob = new InitDatabase(argsList);//这里速度慢的话能调出快照
                 EDatabase.setCheckExamine();
-                Job.initJobManager(numThreads, loggingFilePath, socketPort, ui, initJob);
+                Job.initJobManager(numThreads, loggingFilePath, socketPort, ui, initJob);//快照入流->流输出
                 break;
             case CLIENT:
                 clientDatabase = new EDatabase(IdManager.stdIdManager.getInitialSnapshot(), "clientDB");
