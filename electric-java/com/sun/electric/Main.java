@@ -282,7 +282,7 @@ public final class Main
                 Job.setUserInterface(new UserInterfaceInitial(clientDatabase));
                 initJob = new InitDatabase(argsList);
                 EDatabase.setCheckExamine();
-                Job.initJobManager(numThreads, loggingFilePath, socketPort, ui, initJob);
+                Job.initJobManager(numThreads, loggingFilePath, socketPort, ui, initJob);//从这里进入snapshot->到达ejob序列化过程->快照序列化输出->流插入JTree数据库->遇到程序结尾右大括号->流输出
                 break;
             case CLIENT:
                 clientDatabase = new EDatabase(IdManager.stdIdManager.getInitialSnapshot(), "clientDB");

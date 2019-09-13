@@ -351,7 +351,7 @@ public abstract class Job implements Serializable {
 			timer.start();
 			ejob.serverJob = null;
 			if (doItOnServer) {
-				ejob.serialize(EDatabase.clientDatabase());
+				ejob.serialize(EDatabase.clientDatabase());//在这里打开snapshot
 				Job.currentUI.putProcessingEJob(ejob, onMySnapshot);
 				if (serverJobManager != null) {
 					serverJobManager.addJob(ejob, onMySnapshot);
@@ -613,9 +613,9 @@ public abstract class Job implements Serializable {
 		else
 			currentUI.removeProcessingEJob(getKey());
 		return true;
-	}
+	}	private static final ThreadLocal<UserInterface> threadUserInterface = new ThreadLocal<UserInterface>() {
 
-	private static final ThreadLocal<UserInterface> threadUserInterface = new ThreadLocal<UserInterface>() {
+
 		// @Override
 		// protected UserInterface initialValue() {
 		// throw new IllegalStateException();

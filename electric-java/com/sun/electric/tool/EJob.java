@@ -119,7 +119,7 @@ public class EJob {
         try {
             ByteArrayOutputStream byteStream = new ByteArrayOutputStream();
             ObjectOutputStream out = new EObjectOutputStream(byteStream, database);
-            out.writeObject(clientJob);
+            out.writeObject(clientJob);//这里打开snapshot
             out.flush();
             serializedJob = byteStream.toByteArray();
             return null;
