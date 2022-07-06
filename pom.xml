@@ -56,7 +56,7 @@
         <jmfVersion>2.1.1e</jmfVersion>
         <java3dVersion>1.3.1</java3dVersion>
         <beanshellVersion>2.0b4</beanshellVersion>
-        <jythonVersion>2.7.0</jythonVersion>
+        <jythonVersion>2.7.2</jythonVersion>
         <junitVersion>4.10</junitVersion>
         <orgSlf4jVersion>1.7.7</orgSlf4jVersion>
         <scala.version>2.11.7</scala.version>
